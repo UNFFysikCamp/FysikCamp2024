@@ -7,7 +7,7 @@ source_folder="/content/"$1
 # Folder to exclude from copying
 
 
-excluded_files=(".gitignore" "README.md" "THIS.ipynb")
+excluded_files=(".gitignore" "README.md" "HER.ipynb")
 
 #Change the year here
 destination_folder="/content/drive/MyDrive/Colab Notebooks/"$1
