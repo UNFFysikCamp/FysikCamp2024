@@ -5,6 +5,12 @@ cd /content/$1
 source_folder="/content/"$1
 
 
+if [ ! -d "/content/drive/MyDrive/Colab Notebooks" ]; then
+  echo "Du har glemt at gemme i Google Drive. Så tryk CTRL + S for gemme i Google Drive, og kør derefter denne celle igen."
+  exit 1
+fi
+
+
 echo "Copying main folder to Google Drive"
 # Folder to exclude from copying
 excluded_files=(".gitignore" "README.md" "HER.ipynb")
